@@ -10,7 +10,7 @@ const Team = () => {
         </div> 
         <div className='flex lg:w-9/12 gap-10 flex-wrap justify-center pt-10'>
             <ProfileBlock image="/profile/Ali.jpg" name="Ali Alchikh Ibrahim"/>
-            <ProfileBlock image="default" name="Matthew Lundeen"/>
+            <ProfileBlock image="/profile/Matthew.webp" name="Matthew Lundeen"/>
             <ProfileBlock image="default" name="Eric Wetzel"/>
             <ProfileBlock image="default" name="Zuzanna Latosa"/>
             <ProfileBlock image="/profile/Efe.png" name="Efe Ozalp"/>
