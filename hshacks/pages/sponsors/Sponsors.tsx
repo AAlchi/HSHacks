@@ -5,37 +5,37 @@ const sponsorsConst = [
     {
         color: "diamond",
         name: "Sponsor Name",
-        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestiae sapiente soluta voluptatem hic beatae fugiat optio minus aliquid laudantium non magnam est numquam at veniam, suscipit sunt molestias. Odit nisi ab dolor consequuntur voluptatum illo nam dolores inventore voluptates.",
         website: "https://hshacks.org"
     },
     {
         color: "diamond",
         name: "Sponsor Name",
-        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestiae sapiente soluta voluptatem hic beatae fugiat optio minus aliquid laudantium non magnam est numquam at veniam, suscipit sunt molestias. Odit nisi ab dolor consequuntur voluptatum illo nam dolores inventore voluptates.",
         website: "https://hshacks.org"
     },
     {
         color: "gold",
         name: "Sponsor Name",
-        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestiae sapiente soluta voluptatem hic beatae fugiat optio minus aliquid laudantium non magnam est numquam at veniam, suscipit sunt molestias. Odit nisi ab dolor consequuntur voluptatum illo nam dolores inventore voluptates.",
         website: "https://hshacks.org"
     },
     {
         color: "gold",
         name: "Sponsor Name",
-        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestiae sapiente soluta voluptatem hic beatae fugiat optio minus aliquid laudantium non magnam est numquam at veniam, suscipit sunt molestias. Odit nisi ab dolor consequuntur voluptatum illo nam dolores inventore voluptates.",
         website: "https://hshacks.org"
     },
     {
         color: "silver",
         name: "Sponsor Name",
-        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestiae sapiente soluta voluptatem hic beatae fugiat optio minus aliquid laudantium non magnam est numquam at veniam, suscipit sunt molestias. Odit nisi ab dolor consequuntur voluptatum illo nam dolores inventore voluptates.",
         website: "https://hshacks.org"
     },
     {
         color: "silver",
         name: "Sponsor Name",
-        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestiae sapiente soluta voluptatem hic beatae fugiat optio minus aliquid laudantium non magnam est numquam at veniam, suscipit sunt molestias. Odit nisi ab dolor consequuntur voluptatum illo nam dolores inventore voluptates.",
         website: "https://hshacks.org"
     }
 ]
