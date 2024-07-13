@@ -7,7 +7,7 @@ const Team = () => {
       <div className='items-start flex flex-col w-full'>
         <h1 className='text-3xl font-extrabold pb-3'>Our Team</h1>
         <div className='w-full border-b-2 border-white' />
-      </div> 
+      </div>  
         <div className='grid w-full gap-10 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 items-center justify-center pt-10 p-10'>
           <ProfileBlock image="/profile/Ali.jpg" name="Ali Alchikh Ibrahim" school="John Hersey HS" />
           <ProfileBlock image="/profile/Matthew.webp" name="Matthew Lundeen" school="Prospect HS" />

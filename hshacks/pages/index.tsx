@@ -1,11 +1,11 @@
-import Summary from "./about/summary/Summary";
-import FAQ from "./faq/FAQ";
-import Footer from "./global/footer/Footer";
-import Header from "./global/header/Header";
-import Landing from "./landing/Landing";
-import Schedule from "./schedule/Schedule";
-import Sponsors from "./sponsors/Sponsors";
-import Team from "./team/Team";
+import Summary from "./components/summary/Summary";
+import FAQ from "./components/faq/FAQ";
+import Footer from "./components/global/footer/Footer";
+import Header from "./components/global/header/Header";
+import Landing from "./components/landing/Landing";
+import Schedule from "./components/schedule/Schedule";
+import Sponsors from "./components/sponsors/Sponsors";
+import Team from "./components/team/Team";
 
 export default function Home() {
   return (
