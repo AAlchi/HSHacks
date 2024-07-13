@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <title>HSHacks</title>
+      <link rel="icon" href="/HSHacks_Icon.png" />
       <body>
         <Main />
         <NextScript />
