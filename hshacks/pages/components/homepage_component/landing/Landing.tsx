@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../global/button/Button'
+import Button from '../../global/button/Button'
 
 const Landing = () => {
     return (

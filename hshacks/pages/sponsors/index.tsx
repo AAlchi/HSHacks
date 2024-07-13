@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react' 
 import Header from '../components/global/header/Header'
-import Footer from '../components/global/footer/Footer' 
-import SponsorLanding from '../components/landing/SponsorLanding'
+ import Footer from '../components/global/footer/Footer'
+import SponsorLanding from '../components/sponsorpage_component/sponsors/landing/SponsorLanding'
 
 const index = () => {
   return (
