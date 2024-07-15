@@ -3,7 +3,7 @@ import FAQBlock from './FAQBlock'
 
 const FAQ = () => {
   return (
-    <div className='text-white bg-blue-950 py-10 px-10 justify-center items-center flex-col flex'>
+    <div className='text-white bg-blue-850 py-10 px-10 justify-center items-center flex-col flex'>
         <div className='items-start flex flex-col w-full'>
             <h1 className='text-3xl font-extrabold pb-3'>Frequently Asked Questions</h1>
             <div className='w-full border-b-2 border-white' style={{ height: "2px" }} />

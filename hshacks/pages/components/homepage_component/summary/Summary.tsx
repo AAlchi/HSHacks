@@ -3,10 +3,10 @@ import StatBoxes from './StatBoxes'
 
 const Summary = () => {
   return (
-    <div className='text-white text-start flex lg:gap-4 gap-10 lg:p-20 py-10 justify-evenly lg:flex-row flex-col items-center bg-gradient-to-r from-indigo-600 via-blue-800 to-indigo-900'>
-       <div className='flex flex-col text-center lg:text-start gap-3 w-3/5'>
+    <div className='text-white py-10 flex lg:gap-4 gap-10 lg:p-20 justify-evenly lg:flex-row flex-col items-center bg-gradient-to-r from-indigo-600 via-blue-800 to-indigo-900'>
+       <div className='flex flex-col text-center justify-center items-center lg:justify-start lg:items-start lg:text-start gap-3 w-5/5'>
         <h1 className='font-extrabold text-4xl'>What is HSHacks?</h1>
-        <p className='text-lg lg:w-3/5 flex items-start'>HSHacks is a 12-hour, in-person hackathon where you can chill, code, and get prizes! You can team up (max 5) or go solo to solve a theme-related problem!</p>
+        <p className='text-lg lg:w-3/5 w-10/12 flex items-start'>HSHacks is a 12-hour, in-person hackathon where you can chill, code, and get prizes! You can team up (max 5) or go solo to solve a theme-related problem!</p>
        </div>
        <div className='flex flex-col gap-1 lg:w-2/5 w-11/12'>
         <StatBoxes icon="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" text="120+ expected participants" />

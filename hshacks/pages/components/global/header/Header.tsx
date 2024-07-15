@@ -14,10 +14,10 @@ const Header = () => {
                     <li className="cursor-pointer text-lg" onClick={() => router.push("/sponsors")}>For Sponsors</li> 
                 </ul>
             </div> 
-            <div className='sm:hidden flex text-black font-semibold px-3 pb-3 overflow-auto'>
+            <div className='sm:hidden flex text-black font-semibold px-5 pb-3 overflow-auto'>
                 <ul className='flex gap-3'>
-                    <List name="History" />
-                    <List name="For Sponsors" /> 
+                    <List onClick={"/history"} name="History" />
+                    <List onClick={"/sponsors"} name="For Sponsors" /> 
                 </ul>
             </div>
         </header>
