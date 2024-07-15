@@ -8,7 +8,7 @@ const FAQ = () => {
             <h1 className='text-3xl font-extrabold pb-3'>Frequently Asked Questions</h1>
             <div className='w-full border-b-2 border-white' style={{ height: "2px" }} />
         </div> 
-        <div className='flex gap-10 lg:flex-wrap lg:flex-row flex-col justify-center pt-10'>  
+        <div className='flex gap-10 w-full flex-col items-center justify-center pt-10'>
             <FAQBlock question="Where does my money go?" answer="The money will go to prizes, swag, other expenses, as well as future events that we host!"/>
             <FAQBlock question="Why sponsor HSHacks?" answer="By sponsoring HSHacks, you are helping a large audience of middle/high school students with their coding career and helping them spark a new journey!"/>
         </div>

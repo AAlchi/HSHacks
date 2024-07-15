@@ -3,8 +3,8 @@ import StatBoxes from './StatBoxes'
 
 const Summary = () => {
   return (
-    <div className='text-white py-10 flex lg:gap-4 gap-10 lg:p-20 justify-evenly lg:flex-row flex-col items-center bg-gradient-to-r from-indigo-600 via-blue-800 to-indigo-900'>
-       <div className='flex flex-col text-center justify-center items-center lg:justify-start lg:items-start lg:text-start gap-3 w-5/5'>
+    <div className='text-white py-20 flex lg:md:px-20 px-2 gap-10 justify-evenly lg:flex-row flex-col items-center bg-gradient-to-r from-indigo-600 via-blue-800 to-indigo-900'>
+       <div className='flex flex-col text-center justify-center items-center lg:justify-start lg:items-start lg:text-start gap-3 w-full'>
         <h1 className='font-extrabold text-4xl'>What is HSHacks?</h1>
         <p className='text-lg lg:w-3/5 w-10/12 flex items-start'>HSHacks is a 12-hour, in-person hackathon where you can chill, code, and get prizes! You can team up (max 5) or go solo to solve a theme-related problem!</p>
        </div>

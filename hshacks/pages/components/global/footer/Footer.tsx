@@ -12,7 +12,7 @@ const Footer = () => {
                     </div> 
                     <Map />
                 </div>
-                <div className='flex-initial lg:w-2/5 w-full flex items-start flex-col'>
+                <div className='flex-initial lg:w-2/5 w-full flex items-start flex-col lg:pt-0 pt-10'>
                     <div className='w-full border-b-2 border-white flex items-center mb-5' style={{ height: "60px" }}>
                         <h1 className='text-2xl'>Contact Us</h1>
                     </div>

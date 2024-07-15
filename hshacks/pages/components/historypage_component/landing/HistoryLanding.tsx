@@ -7,17 +7,13 @@ const HistoryLanding = () => {
             <div>
                 <div className='text-center flex flex-col gap-10 h-screen items-center justify-center'>
                     <div className='flex flex-col gap-3'>
-                        <h1 className='text-5xl font-extrabold'>The history of <span className="HSBlue">HSHacks</span></h1> 
-                    </div>
-                    <div className='flex gap-3 flex-col justify-center'>
-                        <Button name="Download HSHacks 2023 Stats" disabled navigate="https://hshacks.org/signup" color="bg-white text-slate-500" icon="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-                        <Button name="Download HSHacks 2024 Stats" disabled navigate="https://discord.gg/zMAQhPX9" color="bg-white text-slate-500" icon="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-                    </div>
+                        <h1 className='text-6xl font-extrabold'><span className="HSBlue">HSHacks</span> 2024</h1> 
+                    </div> 
                 </div>
-                <div className='absolute w-full bottom-0 bg-white text-black flex justify-evenly md:flex-row flex-col'>
-                    <h1 className='font-extrabold flex items-center md:gap-2 py-5 whitespace-nowrap'> 
-                        Questions? Contact us at team@hshacks.org
-                    </h1> 
+                <div className='absolute w-full bottom-10 text-white flex justify-center'>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-9 animate-bounce">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                    </svg>
                 </div>
             </div>
         </div>
