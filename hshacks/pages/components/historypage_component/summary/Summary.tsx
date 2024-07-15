@@ -5,7 +5,7 @@ import StatBoxes from './StatBoxes'
 const Summary = () => {
   const nums = ["one", "two", "three", "four", "five", "six", "seven"]
   return (
-    <div className='text-white py-20 flex gap-4 gap-10 p-20 justify-evenly flex-col items-start bg-gradient-to-b from-indigo-600 via-blue-800 to-indigo-900'>
+    <div className='text-white py-20 flex gap-4 gap-10 lg:px-20 px-5 justify-evenly flex-col items-start bg-gradient-to-b from-indigo-600 via-blue-800 to-indigo-900'>
       <div>
         <h1 className='font-extrabold text-4xl'>HSHacks 2024</h1>
       </div>
