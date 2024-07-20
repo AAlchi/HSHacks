@@ -16,6 +16,7 @@ const Team = () => {
           <ProfileBlock image="/profile/Efe.png" name="Efe Ozalp" school="Prospect HS" />
           <ProfileBlock image="/profile/Albert.jpeg" name="Albert Kim" school="Prospect HS" />
           <ProfileBlock image="default" name="Richard Fetyko" school="John Hersey HS" />
+          <ProfileBlock image="default" name="Amanuel Mikhael" school="John Hersey HS" />
         </div> 
     </div>
   )
