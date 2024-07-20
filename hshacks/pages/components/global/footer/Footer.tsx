@@ -16,8 +16,9 @@ const Footer = () => {
                     <div className='w-full border-b-2 border-white flex items-center mb-5' style={{ height: "60px" }}>
                         <h1 className='text-2xl'>Contact Us</h1>
                     </div>
-                    <ContactBlock name="Ali Alchikh Ibrahim" email='aalchikhibrahim6522@stu.d214.org' />
-                    <ContactBlock name="Matthew Lundeen" email='mlundeen5270@stu.d214.org' />
+                    <ContactBlock name="HSHacks Team" email='team@hshacks.org' label='Team email'/>
+                    <ContactBlock name="Ali Alchikh Ibrahim" email='aalchikhibrahim6522@stu.d214.org' label='Director'/>
+                    <ContactBlock name="Matthew Lundeen" email='mlundeen5270@stu.d214.org' label='Director'/>
                 </div> 
         </footer>
     )

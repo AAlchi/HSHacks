@@ -3,7 +3,7 @@ import ProfileBlock from './ProfileBlock'
 
 const Team = () => {
   return (
-    <div className='text-white lg:md:px-20 px-5'>
+    <div className='text-white pt-20 lg:md:px-20 px-5'>
       <div className='items-start flex flex-col w-full'>
         <h1 className='text-3xl font-extrabold pb-3'>Our Team</h1>
         <div className='w-full border-b-2 border-white' />

@@ -15,7 +15,10 @@ header {
 
 body {
   background-color: var(--background-color);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* max-width: 80%;
+  margin-left: auto;
+  margin-right: auto; */
 }
 
 .phone_click {
