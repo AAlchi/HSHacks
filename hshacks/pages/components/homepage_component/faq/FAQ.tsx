@@ -3,7 +3,8 @@ import FAQBlock from './FAQBlock'
 
 const FAQ = () => {
   return (
-    <div className='text-white bg-blue-850 py-10 lg:md:px-20 px-5 justify-center items-center flex-col flex'>
+    <div className='flex justify-center'>
+    <div className='text-white bg-blue-850 py-10 lg:md:px-20 w-full px-5 justify-center items-center flex-col flex' style={{maxWidth: "1500px"}}>
         <div className='items-start flex flex-col w-full'>
             <h1 className='text-3xl font-extrabold pb-3'>Frequently Asked Questions</h1>
             <div className='w-full border-b-2 border-white' style={{ height: "2px" }} />
@@ -16,6 +17,7 @@ const FAQ = () => {
             <FAQBlock question="What if I don't have an ID?" answer="Everyone is required to have a state or school ID. If you don't have an ID, have a parent/guardian check you in using theirs."/>
             <FAQBlock question="Is HSHacks free?" answer="Yup! Completely free. :)"/>
         </div>
+    </div>
     </div>
   )
 }

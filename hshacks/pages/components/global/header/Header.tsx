@@ -53,15 +53,13 @@ const Header = () => {
                         )}
                     </button>
                 </div>
-            </div>
-            {menuOpen && (
-                <div className='absolute top-full left-0 w-full bg-gray-900 p-6 transition-all duration-300 ease-in-out'>
-                    <div className='flex flex-col items-center'>
-                        <button className='text-lg text-white py-3 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105' onClick={() => {router.push("/history"); setMenuOpen(false);}}>History</button>
-                        <button className='text-lg text-white py-3 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105' onClick={() => {router.push("/sponsors"); setMenuOpen(false);}}>For Sponsors</button>
-                    </div>
+            </div> 
+            <div className={`fixed w-full z-10 text-white text-xl pb-3  transition-colors duration-300 ease-in-out ${menuOpen ? 'bg-gray-900' : 'bg-transparent'}`}>
+                <div className={`${!menuOpen ? "hidden" : "flex"} flex-col items-center`}>
+                    <button className='text-lg text-white py-3 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105' onClick={() => { router.push("/history"); setMenuOpen(false); }}>History</button>
+                    <button className='text-lg text-white py-3 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105' onClick={() => { router.push("/sponsors"); setMenuOpen(false); }}>For Sponsors</button>
                 </div>
-            )}
+            </div> 
         </header>
     )
 }

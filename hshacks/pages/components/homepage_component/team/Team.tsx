@@ -3,12 +3,14 @@ import ProfileBlock from './ProfileBlock'
 
 const Team = () => {
   return (
-    <div className='text-white pt-20 lg:md:px-20 px-5'>
+    <div className='flex justify-center'>
+
+    <div className='text-white pt-20 lg:md:px-20 w-full px-5' style={{maxWidth: "1500px"}}>
       <div className='items-start flex flex-col w-full'>
         <h1 className='text-3xl font-extrabold pb-3'>Our Team</h1>
         <div className='w-full border-b-2 border-white' />
       </div>  
-        <div className='grid lg:grid-cols-3 grid-cols-1 px-5 py-7'>
+        <div className='grid lg:grid-cols-3 grid-cols-1 py-7'>
           <ProfileBlock image="/profile/Ali.jpg" name="Ali Alchikh Ibrahim" school="John Hersey HS" />
           <ProfileBlock image="/profile/Matthew.webp" name="Matthew Lundeen" school="Prospect HS" />
           <ProfileBlock image="default" name="Eric Wetzel" school="John Hersey HS" />
@@ -18,6 +20,7 @@ const Team = () => {
           <ProfileBlock image="default" name="Richard Fetyko" school="John Hersey HS" />
           <ProfileBlock image="default" name="Amanuel Mikhael" school="John Hersey HS" />
         </div> 
+    </div>
     </div>
   )
 }
