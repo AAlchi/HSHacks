@@ -1,20 +1,16 @@
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
-import List from './List'
 import { useRouter } from 'next/router'
 
 const Header = () => {
     const router = useRouter()
     const [hasScrolled, setHasScrolled] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
             const threshold = window.innerHeight * 0.15
-            if (window.scrollY > threshold) {
-                setHasScrolled(true)
-            } else {
-                setHasScrolled(false)
-            }
+            setHasScrolled(window.scrollY > threshold)
         }
 
         window.addEventListener('scroll', handleScroll)
@@ -24,21 +20,48 @@ const Header = () => {
         }
     }, [])
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
+
     return (
-        <header className={`fixed w-full z-10 text-white text-xl flex flex-col transition-colors duration-300 ${hasScrolled ? 'bg-gray-900' : 'bg-transparent'}`}>
-            <div className='p-4 text-white text-xl flex justify-between items-center'> 
-                <Image onClick={() => router.push("/")} width="150" height="0" style={{height: "30px", objectFit: "cover", cursor: "pointer"}} src="/HSHacks_Logo.png" alt="logo" /> 
-                <ul className='flex gap-5 font-medium text-slate-300'>
-                    <li className="cursor-pointer text-lg" onClick={() => router.push("/history")}>History</li>
-                    <li className="cursor-pointer text-lg" onClick={() => router.push("/sponsors")}>For Sponsors</li> 
-                </ul>
-            </div> 
-            {/* <div className='sm:hidden flex text-black font-semibold px-5 pb-3 overflow-auto'>
-                <ul className='flex gap-3'>
-                    <List onClick={"/history"} name="History" />
-                    <List onClick={"/sponsors"} name="For Sponsors" /> 
-                </ul>
-            </div> */}
+        <header className={`fixed w-full z-10 text-white text-xl transition-colors duration-300 ease-in-out ${hasScrolled || menuOpen ? 'bg-gray-900' : 'bg-transparent'}`}>
+            <div className='p-5 flex justify-between items-center'>
+                <Image 
+                    onClick={() => router.push("/")} 
+                    width={150} 
+                    height={30} 
+                    className="cursor-pointer"
+                    src="/HSHacks_Logo.png" 
+                    alt="logo" 
+                    priority
+                />
+                <div className='hidden sm:flex gap-5 font-medium text-slate-300'>
+                    <li className="cursor-pointer text-lg list-none" onClick={() => router.push("/history")}>History</li>
+                    <li className="cursor-pointer text-lg list-none" onClick={() => router.push("/sponsors")}>For Sponsors</li> 
+                </div>
+                <div className='sm:hidden'>
+                    <button onClick={toggleMenu} className="focus:outline-none">
+                        {!menuOpen ? (
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        ) : (
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        )}
+                    </button>
+                </div>
+            </div>
+            {menuOpen && (
+                <div className='absolute top-full left-0 w-full bg-gray-900 p-6 transition-all duration-300 ease-in-out'>
+                    <div className='flex flex-col items-center'>
+                        <button className='text-lg text-white py-3 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105' onClick={() => {router.push("/history"); setMenuOpen(false);}}>History</button>
+                        <button className='text-lg text-white py-3 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105' onClick={() => {router.push("/sponsors"); setMenuOpen(false);}}>For Sponsors</button>
+                    </div>
+                </div>
+            )}
         </header>
     )
 }
