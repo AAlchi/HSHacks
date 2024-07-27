@@ -5,7 +5,8 @@ import StatBoxes from './StatBoxes'
 const Summary = () => {
   const nums = ["one", "two", "three", "four", "five", "six", "seven"]
   return (
-    <div className='text-white py-20 flex gap-4 gap-10 lg:px-20 px-5 justify-evenly flex-col items-start bg-gradient-to-b from-indigo-600 via-blue-800 to-indigo-900'>
+    <div className='flex bg-gradient-to-b from-indigo-600 via-blue-800 to-indigo-900 justify-center'>
+    <div className='text-white py-20 flex gap-4 justify-evenly flex-col items-start px-4' style={{maxWidth: "1500px"}}>
       <div>
         <h1 className='font-extrabold text-4xl'>HSHacks 2024</h1>
       </div>
@@ -19,6 +20,7 @@ const Summary = () => {
           <Pictures key={number} link={`/pictures/${number}.jpg`}/>
         ))}
       </div>
+    </div>
     </div>
   )
 }
