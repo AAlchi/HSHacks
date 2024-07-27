@@ -9,7 +9,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const threshold = window.innerHeight * 0.25
+            const threshold = window.innerHeight * 0.15
             if (window.scrollY > threshold) {
                 setHasScrolled(true)
             } else {
