@@ -38,7 +38,7 @@ body {
   color: #5094cc
 } 
 
-.background {
+.background {  
   background-image: url("/LandingBackground.jpg");
   background-position: center;
   background-size: cover;
@@ -46,5 +46,19 @@ body {
 }
 
 .background > div {
+  height: auto;
+  min-height: 100vh;
   background-color: rgb(0, 0, 0, 0.7);
+}   
+
+.landingFooter {
+  position: absolute;
+  bottom: 0
+}
+   
+
+@media (max-height: 800px) { 
+  .landingFooter {
+    position: relative
+  }
 }

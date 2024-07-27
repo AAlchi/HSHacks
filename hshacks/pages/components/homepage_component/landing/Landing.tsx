@@ -14,8 +14,8 @@ const Landing = () => {
     
     return (
         <div className='background'>
-        <div className='text-white flex flex-col items-center justify-between h-screen gap-10'> 
-                <div className='text-center h-screen flex flex-col gap-10 items-center pt-20 justify-center px-4 md:px-8 lg:px-16' style={{minHeight: "500px"}}>
+        <div className='text-white flex h-screen flex-col items-center justify-between gap-10 '> 
+                <div className='text-center flex flex-col gap-10 items-center pt-20 justify-center px-4 md:px-8 lg:px-16' style={{minHeight: "750px"}}>
                     <div className='flex flex-col gap-3'>
                         <h1 className='text-5xl font-extrabold one'>
                             <span className="HSBlue">Code.</span> Win Prizes. <span className="HSBlue">Make a Difference.</span>
@@ -29,7 +29,7 @@ const Landing = () => {
                         <Button name="Join the Discord" navigate="https://discord.gg/cwrAaMbRTu" color="bg-blue-800 text-white" icon="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
                     </div>
                 </div>
-                <div className='w-full bg-white text-black flex justify-evenly md:flex-row flex-col' style={{opacity: 0.8}}>
+                <div className='w-full bg-white text-black landingFooter flex justify-evenly md:flex-row flex-col' style={{opacity: 0.8}}>
                     <h1 className='font-extrabold flex items-center md:gap-2 py-5 whitespace-nowrap'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 w-1/5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
