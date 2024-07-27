@@ -21,7 +21,12 @@ const SponsorCard: React.FC<SponsorCardInterface> = ({
             <div className='p-4'>
                 <div className='flex justify-between border-b-2 border-gray-200 text-2xl'>
                     <div className='flex gap-3 items-start pb-3'>
-                        <img width="100" height="0" className="w-full" style={{maxHeight: "45px"}} src={image} alt='image' /> 
+                    <img
+                        className="w-full h-auto"
+                        style={{maxHeight: "45px", objectFit: "contain"}}
+                        src={image}
+                        alt='image'
+                    />
                     </div>
                     <svg onClick={relocate} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 cursor-pointer">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
