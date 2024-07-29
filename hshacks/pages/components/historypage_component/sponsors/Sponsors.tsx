@@ -115,7 +115,7 @@ const sponsorsConst = [
 const Sponsors = () => {
     return (
         <div className='bg-gray-100 flex justify-center'>
-        <div className='text-white py-20 px-2 justify-center items-center flex-col flex w-full' style={{maxWidth: "1295px"}}>
+        <div className='text-white py-20 lg:md:px-20 px-2 justify-center items-center flex-col flex' style={{maxWidth: "1500px"}}>
             <div className='items-start flex flex-col w-full p-3'>
                 <h1 className='text-3xl font-extrabold pb-3 text-black'>Our Sponsors</h1>
                 <div className='w-full border-b-2 border-gray-300' style={{ height: "2px" }} />
