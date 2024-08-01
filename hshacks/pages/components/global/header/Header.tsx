@@ -25,7 +25,7 @@ const Header = () => {
     }
 
     return (
-        <header className={`fixed w-full z-10 text-white text-xl transition-colors duration-300 ease-in-out ${hasScrolled || menuOpen ? 'bg-gray-900' : 'bg-transparent'}`}>
+        <header className={`fixed w-full z-10 text-white text-xl transition-colors duration-300 ease-in-out ${hasScrolled || menuOpen ? 'bg-gradient-to-b from-gray-900 to-gray-800' : 'bg-transparent'}`}>
             <div className='p-5 flex justify-between items-center'>
                 <Image 
                     onClick={() => router.push("/")} 
