@@ -3,7 +3,7 @@ import Pictures from './Pictures'
 import StatBoxes from './StatBoxes'
 
 const Summary = () => {
-  const nums = ["one", "two", "three", "four", "five", "six", "seven"]
+  const nums = ["one", "two", "three", "four", "five", "six"]
   return (
     <div className='flex bg-gradient-to-b from-indigo-600 via-blue-800 to-indigo-900 justify-center'>
     <div className='text-white py-20 flex gap-4 justify-evenly flex-col items-start px-4' style={{maxWidth: "1500px"}}>

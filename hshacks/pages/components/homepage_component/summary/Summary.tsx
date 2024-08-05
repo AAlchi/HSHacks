@@ -14,8 +14,7 @@ const Summary = () => {
     '/pictures/three.jpg',
     '/pictures/four.jpg',
     '/pictures/five.jpg',
-    '/pictures/six.jpg',
-    '/pictures/seven.jpg'
+    '/pictures/six.jpg'
   ]
 
   return (
