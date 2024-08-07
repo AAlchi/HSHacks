@@ -1,6 +1,7 @@
 import React from 'react' 
 import Pictures from './Pictures' 
 import StatBoxes from './StatBoxes'
+import Button from '../../global/button/Button' 
 
 const Summary = () => {
   const nums = ["one", "two", "three", "four", "five", "six"]
@@ -19,6 +20,9 @@ const Summary = () => {
         {nums.map(number => (
           <Pictures key={number} link={`/pictures/${number}.jpg`}/>
         ))}
+      </div>
+      <div className='flex flex-col items-center w-full mt-12'>
+        <Button name="View the 2024 projects" navigate="https://hshacks-2024.devpost.com/project-gallery" color="bg-white text-black" icon="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
       </div>
     </div>
     </div>

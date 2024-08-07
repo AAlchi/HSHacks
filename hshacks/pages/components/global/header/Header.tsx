@@ -25,7 +25,7 @@ const Header = () => {
     }
 
     return (
-        <header className={`fixed w-full z-10 text-white text-xl transition-colors duration-300 ease-in-out ${hasScrolled || menuOpen ? 'bg-gradient-to-b from-gray-900 to-gray-800' : 'bg-transparent'}`}>
+        <header className={`fixed w-full z-10 text-white text-xl transition-colors duration-300 ease-in-out ${hasScrolled || menuOpen ? 'bg-header' : 'bg-transparent'}`}>
             <div className='p-5 flex justify-between items-center'>
                 <Image 
                     onClick={() => router.push("/")} 
@@ -54,7 +54,7 @@ const Header = () => {
                     </button>
                 </div>
             </div> 
-            <div className={`fixed w-full z-10 text-white text-xl pb-3  transition-colors duration-300 ease-in-out ${menuOpen ? 'bg-gray-900' : 'bg-transparent'}`}>
+            <div className={`fixed w-full z-10 text-white text-xl pb-3 transition-colors duration-300 ease-in-out ${menuOpen ? 'bg-header' : 'bg-transparent'}`}>
                 <div className={`${!menuOpen ? "hidden" : "flex"} flex-col items-center`}>
                     <button className='text-lg text-white py-3 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105' onClick={() => { router.push("/history"); setMenuOpen(false); }}>History</button>
                     <button className='text-lg text-white py-3 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105' onClick={() => { router.push("/sponsors"); setMenuOpen(false); }}>For Sponsors</button>
