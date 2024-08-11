@@ -15,7 +15,6 @@ export default function Home() {
         <title>HSHacks</title>
         <link rel="icon" href="/HSHacks_Icon.png" />
         <link rel="preload" href="/LandingBackground.jpg" as="image" />
-
       </Head>
       <Header />
       <Landing />
