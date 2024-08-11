@@ -43,7 +43,7 @@ const Summary = () => {
           >
             {images.map((src, index) => (
               <div key={index} className='h-80 flex items-center justify-center rounded-lg overflow-hidden'>
-                <img src={src} alt={`Carousel image ${index + 1}`} className='object-cover h-full w-auto' />
+                <img src={src} alt={`Carousel image ${index + 1}`} className='object-cover h-full w-auto' rel="preload" />
               </div>
             ))}
           </Carousel>

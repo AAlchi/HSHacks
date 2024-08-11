@@ -6,10 +6,17 @@ import Landing from "./components/homepage_component/landing/Landing";
 import Schedule from "./components/homepage_component/schedule/Schedule";
 import Team from "./components/homepage_component/team/Team";
 import Sponsors from "./components/homepage_component/sponsors/Sponsors";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>HSHacks</title>
+        <link rel="icon" href="/HSHacks_Icon.png" />
+        <link rel="preload" href="/LandingBackground.jpg" as="image" />
+
+      </Head>
       <Header />
       <Landing />
       <Summary />

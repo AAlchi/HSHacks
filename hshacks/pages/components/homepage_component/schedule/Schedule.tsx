@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react'
 import ScheduleBlock from './ScheduleBlock'
 import gsap from 'gsap'
 
@@ -102,29 +102,31 @@ const ScheduleData = [
   }
 ]
 
-const Schedule = () => { 
+const Schedule = () => {
   return (
-    <div className='text-white py-20 lg:md:px-20 px-5 w-full'>
-      <div className='items-start flex flex-col w-full'>
-        <h1 className='text-3xl font-extrabold pb-3'>Schedule</h1>
-        <div className='w-full border-b-2 border-white' />
-      </div> 
+    <div className='flex justify-center'>
+      <div className='text-white py-20 lg:md:px-20 px-5 w-full' style={{ maxWidth: "1500px" }}>
+        <div className='items-start flex flex-col w-full'>
+          <h1 className='text-3xl font-extrabold pb-3'>Schedule</h1>
+          <div className='w-full border-b-2 border-white' />
+        </div>
         <div className='flex flex-col w-full'>
-          
-           {ScheduleData.map(data => ( 
-                <div key={data.time} className='flex w-full lg:flex-row md:flex-row flex-col'>
-                  
-                <div className='border-r-0 lg:border-r-2 md:border-r-2 border-white lg:justify-end md:justify-end justify-start lg:w-2/12 md:w-2/12 w-full flex'> 
-                  <h1 className='pr-7 pt-10 whitespace-nowrap'>{data.time}</h1> 
-                </div>
-                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-2 flex-wrap pt-8 lg:pl-5 md:pl-5'>
-                 {data.items.map(data => ( 
-                    <ScheduleBlock key={data._id} name={data.name} /> 
-                 ))}   
-                </div>
-              </div>  
-           ))}
-        </div> 
+
+          {ScheduleData.map(data => (
+            <div key={data.time} className='flex w-full lg:flex-row md:flex-row flex-col'>
+
+              <div className='border-r-0 lg:border-r-2 md:border-r-2 border-white lg:justify-end md:justify-end justify-start lg:w-2/12 md:w-2/12 w-full flex'>
+                <h1 className='pr-7 pt-10 whitespace-nowrap'>{data.time}</h1>
+              </div>
+              <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-2 flex-wrap pt-8 lg:pl-5 md:pl-5'>
+                {data.items.map(data => (
+                  <ScheduleBlock key={data._id} name={data.name} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

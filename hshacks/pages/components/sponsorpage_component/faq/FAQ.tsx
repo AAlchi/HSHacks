@@ -1,5 +1,5 @@
-import React from 'react'
-import FAQBlock from './FAQBlock'
+import React from 'react' 
+import FAQBlock from '../../global/faq/FAQBlock'
 
 const FAQ = () => {
   return (

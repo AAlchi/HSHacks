@@ -27,6 +27,7 @@ const SponsorCard: React.FC<SponsorCardInterface> = ({
                             style={{maxHeight: "45px"}}
                             src={image}
                             alt='Sponsor logo'
+                            rel="preload"
                         />
                     </div>
                     <svg onClick={relocate} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer">

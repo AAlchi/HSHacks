@@ -1,5 +1,5 @@
-import React from 'react'
-import SponsorCard from './SponsorCard'
+import React from 'react' 
+import SponsorCard from '../../global/sponsors/SponsorCard'
 
 const sponsorsConst = [
     {
