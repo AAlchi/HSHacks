@@ -4,7 +4,7 @@ HSHacks is a 12-hour, in-person hackathon where you can chill, code, and get pri
 
 We hope to see you there!
 
-- HSHacks Team
+HSHacks Team
 
 
 To run this project:
