@@ -1,4 +1,3 @@
-import Button from '@/pages/components/global/button/Button'
 import React from 'react'
 
 const CodeOfConductLanding = () => {
@@ -17,6 +16,21 @@ const CodeOfConductLanding = () => {
                                 
                                 Our goal is to create an inspiring, safe, and welcoming environment where everyone can feel respected. In order to run HSHacks smoothly, we have established this code of conduct.
                           
+                          `}    
+                        </div>  
+                        <div>
+                            <h1 className='font-bold text-xl'>Project Guidelines</h1>
+                            {`
+                            `}<span className='font-bold pl-5'>• Hardware: </span>{`All projects should be digital and cannot rely on physical devices or components
+                            
+                                `}<span className='font-bold pl-5'>• Originality: </span>{`All projects must be created during the hackathon and must be original. Plagiarism or submitting pre-built projects developed prior to the event is not allowed and can result in disqualification.
+                            
+                                    `}<span className='font-bold pl-5'>• Resources: </span>{` Participants may use open-source libraries, frameworks, and APIs, but it is recommended to inform the judges of any resources used.
+                            
+                                        `}<span className='font-bold pl-5'>• Your Code: </span> {`All code should be open source (on GitHub or a similar website) and shared with the hackathon organizers for evaluation .
+                            
+                                            `}<span className='font-bold pl-5'>• Project Submission: </span>{`All projects must be submitted to DevPost before the stated deadline to be considered.
+
                           `}    
                         </div>  
                         <div>
