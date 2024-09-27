@@ -10,7 +10,7 @@ const Team = () => {
         <h1 className='text-3xl font-extrabold pb-3'>Our Team</h1>
         <div className='w-full border-b-2 border-white' />
       </div>  
-        <div className='grid lg:grid-cols-3 grid-cols-1 py-7'>
+        <div className='py-7 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
           <ProfileBlock image="/profile/Ali.jpg" name="Ali Alchikh Ibrahim" school="John Hersey HS" />
           <ProfileBlock image="/profile/Matthew.webp" name="Matthew Lundeen" school="Prospect HS" />
           <ProfileBlock image="/profile/Eric.webp" name="Eric Wetzel" school="John Hersey HS" />
