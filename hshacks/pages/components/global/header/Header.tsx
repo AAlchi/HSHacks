@@ -9,7 +9,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const threshold = window.innerHeight * 0.15
+            const threshold = window.innerHeight * 0.1
             setHasScrolled(window.scrollY > threshold)
         }
 
