@@ -4,6 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import StatBoxes from './StatBoxes'
 import { useRouter } from 'next/router'
 import Button from '../../global/button/Button'
+import Image from 'next/image'
 
 const Summary = () => {
   const router = useRouter()
@@ -42,8 +43,8 @@ const Summary = () => {
             className='rounded-md max-h-80'
           >
             {images.map((src, index) => (
-              <div key={index} className='h-80 flex items-center justify-center rounded-lg overflow-hidden'>
-                <img src={src} alt={`Carousel image ${index + 1}`} className='object-cover h-full w-auto' rel="preload" />
+              <div key={index} className='h-80 flex items-center justify-center rounded-lg overflow-hidden'> 
+                <Image width={600} height={600} src={src} alt={`Carousel image ${index + 1}`} className='object-cover h-full w-auto' priority placeholder='blur' blurDataURL={src}/>
               </div>
             ))}
           </Carousel>

@@ -9,7 +9,7 @@ const Pictures: React.FC<PicturesInterface> = ({
     link
 }) => {
   return (
-    <Image width={500} height={500} className='w-full object-cover rounded-lg' style={{height: "300px" }} src={link} alt='Image could not be loaded' priority/>
+    <Image width={500} height={500} className='w-full object-cover rounded-lg' style={{height: "300px" }} src={link} alt='Image could not be loaded' priority placeholder='blur' blurDataURL={link}/>
   )
 }
 
