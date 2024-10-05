@@ -1,13 +1,19 @@
-Hello! Welcome to the official HSHacks GitHub repo! 
+Welcome to the official HSHacks website! 
 
-HSHacks is a 12-hour, in-person hackathon where you can chill, code, and get prizes! You can team up (max 5) or go solo to solve a theme-related problem!
+**About**
 
-We hope to see you there!
+HSHacks is a 12-hour, in-person, high school hackathon where participants work together or alone to create a project around the theme (introduced at the start of the hackathon)
 
-- HSHacks Team
+Key details:
 
+- 12 hours (8AM to 8PM)
+- In-person
+- For grades 9-12
+- Located at **John Hersey High School, Arlington Heights Illinois**
+- Event hosted on **April 12, 2025**
+  
+**To run this project**
 
-To run this project:
-
-- Git clone the repository
-- Open the folder in a text editor or IDE and run (npm install) and then after (npm run dev)
+- On the main page (https://github.com/AAlchi/HSHacks), click on **code** and **copy the given link**
+- In your terminal, create a folder and run a **git clone <the link you copied>**
+- **cd** into the **HSHacks folder** and run **npm install** and then **npm run dev**
