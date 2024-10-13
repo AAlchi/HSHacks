@@ -1,5 +1,5 @@
-import React from 'react'
-import Button from '../../global/button/Button'
+import React from 'react' 
+import { motion } from "framer-motion";
 
 const HistoryLanding = () => {
     return (  
@@ -7,8 +7,17 @@ const HistoryLanding = () => {
            <div className='text-white flex flex-col text-white'> 
                    <div className='text-center flex flex-col gap-10 items-center pt-20 justify-center px-4 md:px-8 lg:px-16' style={{minHeight: "600px", flex: "2"}}>
                        <div className='flex flex-col gap-3'>
-                       <h1 className='text-6xl font-extrabold'><span className="HSBlue">HSHacks</span> 2024</h1> 
-
+                        <motion.div
+                            initial={{ scale: 0.7 }}
+                            animate={{ scale: 1 }}
+                            transition={{
+                                type: "spring",
+                                duration: 1,
+                                ease: "easeOut"
+                            }}
+                        >
+                            <h1 className='text-6xl font-extrabold'><span className="HSBlue">HSHacks</span> 2024</h1>
+                        </motion.div>
                        </div> 
                    </div>
                    <div className='w-full text-white pb-10 landingFooter flex justify-evenly' style={{opacity: 0.8}}>

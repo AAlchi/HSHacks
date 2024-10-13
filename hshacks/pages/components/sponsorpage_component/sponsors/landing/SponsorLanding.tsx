@@ -1,5 +1,6 @@
 import Button from '@/pages/components/global/button/Button'
 import React from 'react'
+import { motion } from "framer-motion";
 
 const SponsorLanding = () => {
     return (
@@ -7,7 +8,21 @@ const SponsorLanding = () => {
             <div className='flex flex-col text-white'>
                 <div className='text-center flex flex-col gap-10 items-center pt-20 justify-center px-4 md:px-8 lg:px-16' style={{ minHeight: "600px", flex: "2" }}>
                     <div className='flex flex-col gap-3'>
-                        <h1 className='text-5xl font-extrabold'>Make a Difference for <span className="HSBlue">HSHacks</span></h1>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{
+                              duration: 2,
+                              ease: "easeOut"
+                            }}
+                            style={{  
+                                background: "linear-gradient(to left, #007cbf, #fff)",
+                                WebkitBackgroundClip: "text",
+                                WebkitTextFillColor: "transparent", 
+                            }}
+                        >
+                            <h1 className='text-5xl font-extrabold'>Make a Difference for <span className="HSBlue">HSHacks</span></h1>
+                        </motion.div>
                     </div>
                     <div className='flex gap-3 lg:flex-row flex-col justify-center'>
                         <button 
