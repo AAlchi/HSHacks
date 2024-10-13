@@ -3,7 +3,7 @@ import FAQBlock from '../../global/faq/FAQBlock'
 
 const FAQ = () => {
   return (
-    <div className='flex justify-center bg-slate-700 py-10'>
+    <div className='flex justify-center bg-slate-700'>
     <div className='text-white bg-blue-850 w-full py-20 px-10 justify-center items-center flex-col flex' style={{maxWidth: "1500px"}}>
         <div className='items-start flex flex-col w-full'>
             <h1 className='text-3xl font-extrabold pb-3'>Frequently Asked Questions</h1>
