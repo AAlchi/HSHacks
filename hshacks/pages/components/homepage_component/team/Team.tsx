@@ -11,14 +11,15 @@ const Team = () => {
         <div className='w-full border-b-2 border-white' />
       </div>  
         <div className='py-7 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
-          <ProfileBlock image="/profile/Ali.jpg" name="Ali Alchikh Ibrahim" school="John Hersey HS" />
-          <ProfileBlock image="/profile/Matthew.webp" name="Matthew Lundeen" school="Prospect HS" />
-          <ProfileBlock image="/profile/Eric.webp" name="Eric Wetzel" school="John Hersey HS" />
-          <ProfileBlock image="default" name="Zuzanna Latosa" school="John Hersey HS" />
-          <ProfileBlock image="/profile/Efe.png" name="Efe Ozalp" school="Prospect HS" />
-          <ProfileBlock image="/profile/Albert.jpeg" name="Albert Kim" school="Prospect HS" />
-          <ProfileBlock image="default" name="Richard Fetyko" school="John Hersey HS" />
-          <ProfileBlock image="default" name="Amanuel Mikhael" school="John Hersey HS" />
+          <ProfileBlock image="/profile/Ali.jpg" name="Ali AI" school="John Hersey HS" />
+          <ProfileBlock image="/profile/Matthew.webp" name="Matthew L" school="Prospect HS" />
+          <ProfileBlock image="/profile/Eric.webp" name="Eric W" school="John Hersey HS" />
+          <ProfileBlock image="default" name="Zuzanna L" school="John Hersey HS" />
+          <ProfileBlock image="/profile/Efe.png" name="Efe O" school="Prospect HS" />
+          <ProfileBlock image="/profile/Albert.jpeg" name="Albert K" school="Prospect HS" />
+          <ProfileBlock image="default" name="Richard F" school="John Hersey HS" />
+          <ProfileBlock image="default" name="Amanuel M" school="John Hersey HS" />
+          <ProfileBlock image="default" name="Calliope" school="John Hersey HS" />
         </div> 
     </div>
     </div>
