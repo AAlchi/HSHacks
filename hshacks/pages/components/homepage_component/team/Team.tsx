@@ -20,6 +20,7 @@ const Team = () => {
           <ProfileBlock image="default" name="Richard F" school="John Hersey HS" />
           <ProfileBlock image="default" name="Amanuel M" school="John Hersey HS" />
           <ProfileBlock image="default" name="Calliope" school="John Hersey HS" />
+          <ProfileBlock image="default" name="Chris P" school="Prospect HS" />
         </div> 
     </div>
     </div>
