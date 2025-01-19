@@ -12,7 +12,7 @@ const CodeOfConductLanding = () => {
                         <div>
                             <h1 className='font-bold text-xl'>Purpose</h1>
                             {`
-                                Welcome to HSHacks 2025! We are excited to see the amazing projects you'll build and we hope to give you inspiration and support you on your programming journey!
+                                Welcome to HSHacks 2025! We are excited to see the amazing projects you'll build, and we hope to give you inspiration and support you on your programming journey!
                                 
                                 Our goal is to create an inspiring, safe, and welcoming environment where everyone can feel respected. In order to run HSHacks smoothly, we have established this code of conduct.
                           
