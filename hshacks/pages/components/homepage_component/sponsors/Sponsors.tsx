@@ -18,7 +18,7 @@ const sponsorsConst = [
         color: "gold", 
         description: "Art of Problem Solving provides advanced online Math learning resources, classes, and books for students from Elementary to High School, enabling them to expand their mathematical problem-solving skills! Thank you for sponsoring our hackathon!",
         image: "https://i.ibb.co/Vj0WLD7/Group-200-1.png",
-        website: "https://hackclub.com/"
+        website: "https://artofproblemsolving.com/"
     }, 
     {
         color: "silver", 
