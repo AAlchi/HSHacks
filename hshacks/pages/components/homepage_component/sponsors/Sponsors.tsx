@@ -27,6 +27,12 @@ const sponsorsConst = [
         website: "https://balsamiq.com/"
     }, 
     {
+        color: "gold", 
+        description: "Interview Cake is an amazing place to prepare for your programming interviews! Over 45 practice questions, an integrated coding sandbox, and more! Thank you for supporting HSHacks!",
+        image: "/pictures/cake_logo_blue_gray.png",
+        website: "https://www.interviewcake.com/"
+    }, 
+    {
         color: "silver", 
         description: "Sticker Ninja is a sticker print shop that makes high quality, amazing vinyl stickers. Their stickers are long lasting, UV resistant, and also waterproof! Thank you for supporting HSHacks!",
         image: "https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png",
