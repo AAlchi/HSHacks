@@ -5,7 +5,7 @@ const sponsorsConst = [
     {
         color: "platinum", 
         description: "CodeCrafters offers hands-on learning for programmers. Programmers get to learn how existing developer tools work by building similar ones themselves! Thank you for supporting HSHacks!",
-        image: "/pictures/code-crafters.png",
+        image: "/pictures/code_crafters.png",
         website: "https://codecrafters.io/"
     },
     {
@@ -17,13 +17,19 @@ const sponsorsConst = [
     {
         color: "gold", 
         description: "Art of Problem Solving provides advanced online Math learning resources, classes, and books for students from Elementary to High School, enabling them to expand their mathematical problem-solving skills! Thank you for sponsoring our hackathon!",
-        image: "https://i.ibb.co/Vj0WLD7/Group-200-1.png",
+        image: "/pictures/aops.png",
         website: "https://artofproblemsolving.com/"
     }, 
     {
         color: "gold", 
+        description: "Mathworks is an amazing company that focuses on mathematical computing softwares like MATLAB and Simulink, which include data analysis and simulation. Thank you for your support!",
+        image: "/pictures/mathworks.png",
+        website: "https://www.mathworks.com/"
+    }, 
+    {
+        color: "gold", 
         description: "Are you looking for a tool to help make your ideas a reality? Blasamiq offers an amazing product that allows you to create quick product mockups for your business or project! Thank you for all of your support with HSHacks!",
-        image: "https://balsamiq.com/assets/company/brandassets/balsamiq-logo-screen.png",
+        image: "/pictures/balsamiq-logo-screen.png",
         website: "https://balsamiq.com/"
     }, 
     {
@@ -35,13 +41,13 @@ const sponsorsConst = [
     {
         color: "silver", 
         description: "Sticker Ninja is a sticker print shop that makes high quality, amazing vinyl stickers. Their stickers are long lasting, UV resistant, and also waterproof! Thank you for supporting HSHacks!",
-        image: "https://stickerninja.com/wp-content/themes/sticker-ninja/dist/images/logo-dark_3e368c83.png",
+        image: "/pictures/sticker_ninja.png",
         website: "https://stickerninja.com/"
     },
     {
         color: "silver", 
         description: "Desmos is a dynamic mathematical tool that transforms the way students and educators engage with mathematical concepts! Users can graph functions, plot data, evaluate equations, explore transformations, and much more! Thank you for your support!",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Desmos_logo.svg/1200px-Desmos_logo.svg.png",
+        image: "/pictures/desmos_logo.png",
         website: "https://desmos.com/"
     }
 ]

@@ -1,6 +1,5 @@
 import React from 'react'
-import ScheduleBlock from './ScheduleBlock'
-import gsap from 'gsap'
+import ScheduleBlock from './ScheduleBlock' 
 
 const ScheduleData = [
   {

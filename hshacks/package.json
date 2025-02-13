@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "hshacks",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-  },
+  }, 
+
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.6",
     "@react-google-maps/api": "^2.19.3",
@@ -16,19 +16,21 @@
     "firebase": "^10.12.3",
     "framer-motion": "^11.11.8",
     "gsap": "^3.12.5",
-    "next": "14.2.4",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-responsive-carousel": "^3.2.23"
   },
+
   "devDependencies": {
+    "typescript": "^5",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  }
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "@eslint/eslintrc": "^3"
+  } 
 }

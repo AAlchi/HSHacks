@@ -2,12 +2,10 @@ import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import StatBoxes from './StatBoxes'
-import { useRouter } from 'next/router'
 import Button from '../../global/button/Button'
 import Image from 'next/image'
 
 const Summary = () => {
-  const router = useRouter()
 
   const images = [
     '/pictures/one.jpg',

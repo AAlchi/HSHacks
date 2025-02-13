@@ -1,7 +1,5 @@
 "use client"
 import React from 'react'
-import Button from '../../global/button/Button'
-import gsap from 'gsap'
 
 const RegisterationLanding = () => {
     // if (typeof document !== 'undefined') { 
