@@ -4,6 +4,18 @@ import SponsorCard from '../../global/sponsors/SponsorCard'
 const sponsorsConst = [
     {
         color: "platinum", 
+        description: "Normandy Remodeling is a Chicago-area remodeling company specializing in home, kitchen, and bathroom models. Thank you for supporting HSHacks!",
+        image: "/pictures/normandy_remodeling.png",
+        website: "https://normandyremodeling.com/"
+    },
+    {
+        color: "platinum", 
+        description: "Legat Architects is forward-thinking architecture company that aims to inspire curiosity with their amazing designs. Throughout the decades, they have built a reputation for designs that enhance learning, living, and working environments. Thank you for your support!",
+        image: "/pictures/Legat-Logo-Tagline-Color-RGB.png",
+        website: "https://www.legat.com/"
+    },
+    {
+        color: "platinum", 
         description: "CodeCrafters offers hands-on learning for programmers. Programmers get to learn how existing developer tools work by building similar ones themselves! Thank you for supporting HSHacks!",
         image: "/pictures/code_crafters.png",
         website: "https://codecrafters.io/"
@@ -38,6 +50,12 @@ const sponsorsConst = [
         image: "/pictures/cake_logo_blue_gray.png",
         website: "https://www.interviewcake.com/"
     }, 
+    {
+        color: "silver", 
+        description: "Jimmy John's is a fast-food sandwich chain dedicated to serving you high quality, great sandwiches as fast as possible. Not only do you get your food fast, but you also get to choose from many sandwiches because of their large menu options. Thank you for supporting HSHacks!",
+        image: "/pictures/Jimmy_John's.png",
+        website: "https://www.jimmyjohns.com/"
+    },
     {
         color: "silver", 
         description: "Sticker Ninja is a sticker print shop that makes high quality, amazing vinyl stickers. Their stickers are long lasting, UV resistant, and also waterproof! Thank you for supporting HSHacks!",
