@@ -2,18 +2,23 @@ import React from 'react'
 import Header from '../components/global/header/Header'
  import Footer from '../components/global/footer/Footer'
 import Head from 'next/head'
-import RegisterationLanding from '../components/registeration_component/landing/RegisterationLanding'
+// import RegisterationLanding from '../components/registeration_component/landing/RegisterationLanding'
+import Register from './register'
+import { ToastContainer } from 'react-toastify'
 
 const index = () => {
   return (
-    <div>
+    <div className='background'>
       <Head>
         <title>HSHacks - Registeration</title>
         <link rel="icon" href="/HSHacks_Icon.png" />
       </Head>
-      <Header />  
-      <RegisterationLanding /> 
-      <Footer />
+      <Header />   
+
+      <ToastContainer /> 
+       
+      <Register />
+      <Footer/>
     </div>
   )
 }
