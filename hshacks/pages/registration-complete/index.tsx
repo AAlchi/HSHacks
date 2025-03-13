@@ -25,7 +25,7 @@ const RegistrationComplete = () => {
               Registration Complete!
             </p>
             <p className="text-gray-400">
-              You'll receive a confirmation email shortly.
+              You will receive a confirmation email shortly.
             </p>
           </div>
         </div> 

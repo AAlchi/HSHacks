@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React from 'react';
 
 interface RadioComponentInterface {
   name: string;
-  listOfNames: string[];
-  question: string;
+  listOfNames: string[] | undefined;
+  question: string | undefined;
   subtext?: string;
-  chosenElement: any;
+  chosenElement: string;
   required?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
@@ -35,7 +34,7 @@ const RadioComponent: React.FC<RadioComponentInterface> = ({
       </div>
       <div className="grid grid-cols-2 gap-4 gap-x-16  text-black mb-5">
         {
-          listOfNames.map((option, index) => (
+          listOfNames?.map((option, index) => (
             <div key={index} className="flex items-center">
               <input required={required} value={option} checked={chosenElement == option} name={name} type='radio' onChange={onChange} className="mr-1"/>
               {option} 

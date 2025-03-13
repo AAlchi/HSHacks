@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React from 'react';
 
 interface TextFieldComponentInterface {
   name: string;
-  placeHolder: string;
-  type: string; 
-  question: string;
+  placeHolder: string | undefined;
+  type: string | undefined; 
+  question: string | undefined;
   subtext?: string;
-  value: any;
+  value: string;
   required?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }

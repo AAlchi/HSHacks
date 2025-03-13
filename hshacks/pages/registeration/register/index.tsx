@@ -11,6 +11,7 @@ import { toast } from "react-toastify";
 import Link from "next/link";
 import ReCAPTCHA from 'react-google-recaptcha';
 import ParagraphComponent from "../components/ParagraphComponent/ParagraphComponent";
+import Image from "next/image";
 
 interface FormData {
   firstName: string;
@@ -57,6 +58,7 @@ const Register = () => {
           progress: undefined,
           theme: "light",
         });
+        console.log(error);
       }
     };
 
@@ -71,7 +73,7 @@ const Register = () => {
     router.push("/registration-complete");
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
 
     setFormData((prevFormData) => ({
@@ -80,13 +82,13 @@ const Register = () => {
     }));
   };
 
-  const handlePreviousStep = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handlePreviousStep = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
     setStep(step - 1)
   }
 
-  const handleNextStep = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleNextStep = (e: React.FormEvent<HTMLFormElement | HTMLButtonElement>) => {
       e.preventDefault();
 
     if (step + 1 == 3) { 
@@ -99,7 +101,7 @@ const Register = () => {
 
   }
 
-  const [recaptchaValue, setRecaptchaValue] = useState(null);
+  const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -112,27 +114,42 @@ const Register = () => {
     };
   }, []);
 
-  const handleRecaptchaChange = (value: any) => {
-    setRecaptchaValue(value);
+  const handleRecaptchaChange = (token: string | null) => {
+    setRecaptchaValue(token);
   };
+
+  interface FormFieldInterface {
+    component: "TextFieldComponent" | "ParagraphComponent" | "RadioComponent";
+    group: number;
+    required: boolean;
+    type?: string; 
+    props: {
+      name: string;
+      subtext?: string;
+      placeHolder?: string;
+      question?: string;
+      listOfNames?: string[];
+    };
+  }
+
   return (
     <div className="flex items-center justify-center bg-none relative py-10 rounded-lg" style={{ overflow: "hidden" }}>
       <div className="bg-white flex flex-col rounded w-11/12 p-6 mt-[85px] relative max-w-[600px]">
         <div className="flex flex-col items-start justify-start py-5 gap-3">
-          <img style={{ width: "200px", height: "50px", objectFit: "cover" }} src="./HSHacks_Logo.png" alt="HSHacks_Logo" />
+          <Image width={200} height={200} style={{ width: "200px", height: "50px", objectFit: "cover" }} src="/HSHacks_Logo.png" alt="HSHacks_Logo" />
           <p className="text-slate-400 font-bold pl-1 text-xs">This is the official registration form for HSHacks 2025. We currently accept no more than 170 signups. Please contact team@hshacks.org for any questions.</p>
 
         </div>
         <InformationComponent name={step == 0 ? "General Information" : step == 1 ? "Event Information" : "Other Information"} />
         {!isLoading ? (
-          <form onSubmit={(e) => handleNextStep(e as any)}>
-            {formFields.map((data: any) => (
+          <form onSubmit={handleNextStep}>
+            {formFields.map((data: FormFieldInterface) => (
               <div key={data.props.name}>
                 {data.component == "TextFieldComponent" && data.group == step && (
                   <TextFieldComponent required={data.required} name={data.props.name} subtext={data.props.subtext} placeHolder={data.props.placeHolder} question={data.props.question} onChange={(e) => handleInputChange(e)} type={data.type} value={formData[data.props.name as keyof FormData]} />
                 )}
                 {data.component == "ParagraphComponent" && data.group == step && (
-                  <ParagraphComponent required={data.required} name={data.props.name} subtext={data.props.subtext} placeHolder={data.props.placeHolder} question={data.props.question} onChange={(e) => handleInputChange(e as any)} value={formData[data.props.name as keyof FormData]} />
+                  <ParagraphComponent required={data.required} name={data.props.name} subtext={data.props.subtext} placeHolder={data.props.placeHolder} question={data.props.question} onChange={(e) => handleInputChange(e)} value={formData[data.props.name as keyof FormData]} />
                 )}
                 {data.component == "RadioComponent" && data.group == step && (
                   <RadioComponent required={data.required} name={data.props.name} subtext={data.props.subtext} listOfNames={data.props.listOfNames} question={data.props.question} onChange={(e) => handleInputChange(e)} chosenElement={formData[data.props.name as keyof FormData]} />
@@ -152,9 +169,9 @@ const Register = () => {
             )}
             <div className="flex gap-2 w-full justify-start">
               {step != 0 && (
-                <ButtonComponent secondary name="Back" onClick={(e) => handlePreviousStep(e as any)} />
+                <ButtonComponent secondary name="Back" onClick={handlePreviousStep} />
               )}
-              <ButtonComponent name={step == 2 ? "Submit" : "Next"} submit onClick={(e) => redirect} disabled={step == 2 && !recaptchaValue} />
+              <ButtonComponent name={step == 2 ? "Submit" : "Next"} submit disabled={step == 2 && !recaptchaValue} />
             </div> 
           </form>
         ) : (
@@ -169,4 +186,5 @@ const Register = () => {
   )
 
 }
-export default Register;
+export default Register; 
+ 

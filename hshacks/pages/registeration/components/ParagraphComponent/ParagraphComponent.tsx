@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React from 'react';
 
 interface ParagraphComponentInterface {
   name: string;
-  placeHolder: string; 
-  question: string;
+  placeHolder: string | undefined; 
+  question: string | undefined;
   subtext?: string;
-  value: any;
+  value: string;
   required?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
