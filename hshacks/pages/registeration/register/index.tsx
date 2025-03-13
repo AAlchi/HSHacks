@@ -137,7 +137,7 @@ const Register = () => {
       <div className="bg-white flex flex-col rounded w-11/12 p-6 mt-[85px] relative max-w-[600px]">
         <div className="flex flex-col items-start justify-start py-5 gap-3">
           <Image width={200} height={200} style={{ width: "200px", height: "50px", objectFit: "cover" }} src="/HSHacks_Logo.png" alt="HSHacks_Logo" />
-          <p className="text-slate-400 font-bold pl-1 text-xs">This is the official registration form for HSHacks 2025. We currently accept no more than 170 signups. Please contact team@hshacks.org for any questions.</p>
+          <p className="text-slate-400 font-bold pl-1 text-xs">This is the official registration form for HSHacks 2025. We currently accept no more than 150 signups. Please contact team@hshacks.org for any questions.</p>
 
         </div>
         <InformationComponent name={step == 0 ? "General Information" : step == 1 ? "Event Information" : "Other Information"} />
