@@ -80,6 +80,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         <li style="padding: 10px 0px 10px 0px">Our website: <a href="https://hshacks.org">https://hshacks.org</a></li>
     </ul>
     <p style="padding: 10px 0px 10px 10px">Questions? Contact us at team@hshacks.org</p> 
+    <p style="font-weight: bold; font-size: 20px; padding: 10px 0px 10px 10px">HSHacks is brought to you by: </p>
+    <ul style="list-style-type: none; font-size: 18px;">
+        <li style="padding-bottom: 15;">Normandy Remodeling</li>
+        <li style="padding-bottom: 15;">Legat Architects</li>
+        <li style="padding-bottom: 15;">CodeCrafters</li>
+        <li style="padding-bottom: 15;">XYZ</li>
+    </ul>
+
     </div>
     <p style="font-weight: bold; text-align: center">* Make sure you or your parent/guardian has a school/state ID upon enterance *</p>
   </body>
