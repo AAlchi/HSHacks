@@ -16,6 +16,12 @@ const sponsorsConst = [
     },
     {
         color: "platinum", 
+        description: "For over 40 years O’Reilly has provided technology and business training, knowledge, and insight to help companies succeed. Our unique network of experts and innovators share their knowledge and expertise through books, articles, and our online learning platform. O’Reilly online learning gives you on-demand access to live training courses, in-depth learning paths, interactive coding environments, certification prep materials, and a vast collection of text and video from O’Reilly and 200+ other publishers. For more information visit oreilly.com. Thank you for supporting HSHacks!",
+        image: "/pictures/OReilly_logo_rgb.png",
+        website: "https://www.oreilly.com/"
+    },
+    {
+        color: "platinum", 
         description: "CodeCrafters offers hands-on learning for programmers. Programmers get to learn how existing developer tools work by building similar ones themselves! Thank you for supporting HSHacks!",
         image: "/pictures/code_crafters.png",
         website: "https://codecrafters.io/"
