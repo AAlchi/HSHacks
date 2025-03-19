@@ -85,6 +85,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         <li style="padding-bottom: 15;">Normandy Remodeling</li>
         <li style="padding-bottom: 15;">Legat Architects</li>
         <li style="padding-bottom: 15;">CodeCrafters</li>
+        <li style="padding-bottom: 15;">O'Reilly</li>
         <li style="padding-bottom: 15;">XYZ</li>
     </ul>
 
