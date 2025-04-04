@@ -1,5 +1,5 @@
 import React from 'react'
-import ScheduleBlock from './ScheduleBlock' 
+import ScheduleBlock from './ScheduleBlock'
 
 const ScheduleData = [
   {
@@ -20,85 +20,72 @@ const ScheduleData = [
     time: "8:45 AM",
     items: [{
       _id: 1,
-      name: "Open Coding Time"
-    },
-    {
-      _id: 2,
-      name: "Intro to HTML, CSS, JS"
-    },
-    {
-      _id: 3,
       name: "Team Formation"
-    },
-    {
-      _id: 4,
-      name: "APIs w/ Postman"
-    },
-    {
-      _id: 5,
-      name: "Build Your Programming Toolbox: Workshop"
-    },
-    {
-      _id: 6,
-      name: "Build a Mini-Calendar w/ React"
-    },
-    {
-      _id: 7,
-      name: "Build a RESTful API w/ Node.js & MongoDB"
+    }]
+  },
+  {
+    time: "9:00 AM",
+    items: [{
+      _id: 1,
+      name: "Intro to HTML, CSS, JS Workshop"
+    }]
+  },
+  {
+    time: "10:00 AM",
+    items: [{
+      _id: 1,
+      name: "Mr. Khurram Workshop"
     }]
   },
   {
     time: "12:00 PM",
     items: [{
       _id: 1,
-      name: "Lunch Arrives"
-    },
-    {
-      _id: 2,
-      name: "AMA w/ Larry Schrof"
-    },
-    ]
+      name: "Lunch"
+    }]
   },
   {
     time: "1:00 PM",
     items: [{
       _id: 1,
-      name: "Open Coding Time"
-    },
-    {
-      _id: 2,
-      name: "AI MNIST Digit Recognition Workshop"
-    },
-    {
-      _id: 3,
-      name: "Minigame"
-    },
-    {
-      _id: 4,
+      name: "Miguel's Workshop"
+    }]
+  },
+  {
+    time: "2:00 PM",
+    items: [{
+      _id: 1,
+      name: "AMA with Larry Schrof"
+    }]
+  },
+  {
+    time: "3:15 PM",
+    items: [{
+      _id: 1,
+      name: "Ali AI's Workshop"
+    }]
+  },
+  {
+    time: "4:30 PM",
+    items: [{
+      _id: 1,
       name: "Project Presentation Workshop"
-    },
-    ]
+    }]
   },
   {
     time: "5:30 PM",
     items: [{
       _id: 1,
-      name: "Presentations to SWE Judges"
-    },
-    {
-      _id: 2,
-      name: "Dinner Available"
-    }
-    ]
+      name: "Judging Starts & Dinner"
+    }]
   },
   {
     time: "7:30 PM",
     items: [{
       _id: 1,
       name: "Closing Ceremony"
-    }
-    ]
-  }
+    }]
+  },
 ]
 
 const Schedule = () => {
@@ -115,9 +102,9 @@ const Schedule = () => {
             <div key={data.time} className='flex w-full lg:flex-row md:flex-row flex-col'>
 
               <div className='border-r-0 lg:border-r-2 md:border-r-2 border-white lg:justify-end md:justify-end justify-start lg:w-2/12 md:w-2/12 w-full flex'>
-                <h1 className='pr-7 pt-10 whitespace-nowrap'>{data.time}</h1>
+                <h1 className='pr-7 pt-10 whitespace-nowrap text-lg'>{data.time}</h1>
               </div>
-              <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-2 flex-wrap pt-8 lg:pl-5 md:pl-5'>
+              <div className='w-full gap-1 flex-wrap pt-2 lg:pt-6 lg:pl-5 md:pl-5'>
                 {data.items.map(data => (
                   <ScheduleBlock key={data._id} name={data.name} />
                 ))}

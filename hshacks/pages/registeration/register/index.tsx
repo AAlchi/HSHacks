@@ -2,7 +2,6 @@ import RadioComponent from "../components/RadioComponent/RadioComponent";
 import React, { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
 import TextFieldComponent from "../components/TextFieldComponent/TextFieldComponent";
-import TimeBoxComponent from "../components/TimeBoxComponent/TimeBoxComponent";
 import LoadingComponent from "../components/LoadingComponent/LoadingComponent";
 import ButtonComponent from "../components/buttonComponent/ButtonComponent";
 import InformationComponent from "./InformationComponent";
@@ -179,7 +178,6 @@ const Register = () => {
         )}
 
       </div>
-      <div className="invisible lg:visible absolute bottom-3 right-3"><TimeBoxComponent /></div>
 
 
     </div>
