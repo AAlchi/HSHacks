@@ -34,7 +34,7 @@ const ScheduleData = [
     time: "10:00 AM",
     items: [{
       _id: 1,
-      name: "Mr. Khurram Workshop"
+      name: "Authentication with Spring Boot Workshop"
     }]
   },
   {
@@ -48,7 +48,7 @@ const ScheduleData = [
     time: "1:00 PM",
     items: [{
       _id: 1,
-      name: "Miguel's Workshop"
+      name: "AI Coding Tutor Workshop"
     }]
   },
   {
@@ -62,7 +62,7 @@ const ScheduleData = [
     time: "3:15 PM",
     items: [{
       _id: 1,
-      name: "Ali AI's Workshop"
+      name: "Create a To-Do List Workshop"
     }]
   },
   {
