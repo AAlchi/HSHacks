@@ -19,7 +19,7 @@ const RegisterationLanding = () => {
                             <span className="HSBlue">HSHacks <span className='text-white'>Registeration</span></span>
                         </h1>
                         <p className='text-lg font-bold two px-3'>
-                            Registeration Opens Soon
+                            Registeration Closed
                         </p>
                     </div>
                 </div>
