@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../components/global/button/Button'
 import { sponsorsConst } from '../components/homepage_component/sponsors/Sponsors'
 
 const index = () => {
@@ -24,7 +23,7 @@ const index = () => {
             </div>
             <div className='flex gap-3 flex-wrap'>
                 {sponsorsConst.map(sponsor => (
-                    <div className='bg-white rounded-xl py-3 px-5 text-black flex h-[100px] items-center justify-center'>
+                    <div key={sponsor.website} className='bg-white rounded-xl py-3 px-5 text-black flex h-[100px] items-center justify-center'>
                         <img src={sponsor.image} alt={sponsor.color} className='flex w-full object-cover max-h-[70px] items-center justify-center'/>
                     </div>
                 ))}
