@@ -59,13 +59,6 @@ const ScheduleData = [
     }]
   },
   {
-    time: "3:15 PM",
-    items: [{
-      _id: 1,
-      name: "Create a To-Do List Workshop"
-    }]
-  },
-  {
     time: "4:30 PM",
     items: [{
       _id: 1,
