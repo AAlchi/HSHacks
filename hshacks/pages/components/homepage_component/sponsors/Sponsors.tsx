@@ -1,7 +1,7 @@
 import React from 'react' 
 import SponsorCard from '../../global/sponsors/SponsorCard'
 
-const sponsorsConst = [
+export const sponsorsConst = [
     {
         color: "platinum", 
         description: "Normandy Remodeling is a Chicago-area remodeling company specializing in home, kitchen, and bathroom models. Thank you for supporting HSHacks!",
@@ -13,6 +13,12 @@ const sponsorsConst = [
         description: "Legat Architects is forward-thinking architecture company that aims to inspire curiosity with their amazing designs. Throughout the decades, they have built a reputation for designs that enhance learning, living, and working environments. Thank you for your support!",
         image: "/pictures/Legat-Logo-Tagline-Color-RGB.png",
         website: "https://www.legat.com/"
+    },
+    {
+        color: "platinum", 
+        description: "Township District 214 is a Blue Ribbon School District that offers a complete academic program, comprehensive extracurricular offerings, and life-long learning opportunities! Thank you for supporting HSHacks!",
+        image: "/pictures/D214_logo.png",
+        website: "https://www.d214.org/"
     },
     {
         color: "platinum", 
