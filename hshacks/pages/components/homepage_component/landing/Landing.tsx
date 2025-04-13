@@ -4,46 +4,46 @@ import Button from '../../global/button/Button'
 import { motion } from "framer-motion";
 
 const Landing = () => {
-    const [timeRemaining, setTimeRemaining] = useState<{
-        days: number;
-        hours: number;
-        minutes: number;
-        seconds: number;
-      }>({
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0
-      });
+    // const [timeRemaining, setTimeRemaining] = useState<{
+    //     days: number;
+    //     hours: number;
+    //     minutes: number;
+    //     seconds: number;
+    //   }>({
+    //     days: 0,
+    //     hours: 0,
+    //     minutes: 0,
+    //     seconds: 0
+    //   });
   
-      useEffect(() => {
-        const calculateTimeRemaining = () => {
-          const now = new Date();
-          const hackathonDate = new Date();
+    //   useEffect(() => {
+    //     const calculateTimeRemaining = () => {
+    //       const now = new Date();
+    //       const hackathonDate = new Date();
 
-          const daysAhead = (6 - now.getDay() + 7) % 7;
-          hackathonDate.setDate(now.getDate() + daysAhead);
-          hackathonDate.setHours(8, 0, 0, 0);
+    //       const daysAhead = (6 - now.getDay() + 7) % 7;
+    //       hackathonDate.setDate(now.getDate() + daysAhead);
+    //       hackathonDate.setHours(8, 0, 0, 0);
     
-          const diff: number = hackathonDate.getTime() - now.getTime();
+    //       const diff: number = hackathonDate.getTime() - now.getTime();
     
-          if (diff > 0) {
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    //       if (diff > 0) {
+    //         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    //         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    //         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
     
-            setTimeRemaining({ days, hours, minutes, seconds });
-          } else {
-            setTimeRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-          }
-        };
+    //         setTimeRemaining({ days, hours, minutes, seconds });
+    //       } else {
+    //         setTimeRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    //       }
+    //     };
 
-        const interval = setInterval(calculateTimeRemaining, 1000);
+    //     const interval = setInterval(calculateTimeRemaining, 1000);
     
-        calculateTimeRemaining();
-        return () => clearInterval(interval);
-      }, []);
+    //     calculateTimeRemaining();
+    //     return () => clearInterval(interval);
+    //   }, []);
 
     return (
         <div className='background text-white'>
