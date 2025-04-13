@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Button from '../../global/button/Button' 
 import { motion } from "framer-motion";
 
