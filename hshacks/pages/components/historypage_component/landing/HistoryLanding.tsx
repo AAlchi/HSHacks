@@ -16,7 +16,7 @@ const HistoryLanding = () => {
                                 ease: "easeOut"
                             }}
                         >
-                            <h1 className='text-6xl font-extrabold'><span className="HSBlue">HSHacks</span> 2024</h1>
+                            <h1 className='text-6xl font-extrabold'><span className="HSBlue">HSHacks</span> 2025</h1>
                         </motion.div>
                        </div> 
                    </div>

@@ -20,8 +20,8 @@ const Footer = () => {
                         <h1 className='text-2xl'>Contact Us</h1>
                     </div>
                     <ContactBlock name="HSHacks Team" email='team@hshacks.org' label='Team email' />
-                    <ContactBlock name="Ali Alchikh Ibrahim" email='aalchikhibrahim6522@stu.d214.org' label='Director' />
-                    <ContactBlock name="Matthew Lundeen" email='mlundeen5270@stu.d214.org' label='Director' />
+                    <ContactBlock name="Ali AI" email='aalchikhibrahim6522@stu.d214.org' label='Director' />
+                    {/* <ContactBlock name="Angel B" email='abitsov7028@stu.d214.org' label='Director' /> */}
                 </div>
             </div>
             <div className='text-white pt-5'>

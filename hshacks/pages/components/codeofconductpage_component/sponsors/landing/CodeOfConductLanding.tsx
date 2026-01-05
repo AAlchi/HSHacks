@@ -27,7 +27,7 @@ const CodeOfConductLanding = () => {
                             
                                     `}<span className='font-bold pl-5'>• Resources: </span>{` Participants may use open-source libraries, frameworks, and APIs, but it is recommended to inform the judges of any resources used.
                             
-                                        `}<span className='font-bold pl-5'>• Your Code: </span> {`All code should be open source (on GitHub or a similar website) and shared with the hackathon organizers for evaluation .
+                                        `}<span className='font-bold pl-5'>• Your Code: </span> {`All code should be open source (on GitHub or a similar website) and shared with the hackathon organizers for evaluation.
                             
                                             `}<span className='font-bold pl-5'>• Project Submission: </span>{`All projects must be submitted to DevPost before the stated deadline to be considered.
 

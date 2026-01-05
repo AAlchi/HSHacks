@@ -12,7 +12,6 @@ const Team = () => {
       </div>  
         <div className='py-7 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
           <ProfileBlock image="/profile/Ali.jpg" name="Ali AI" school="John Hersey HS" />
-          <ProfileBlock image="/profile/Matthew.webp" name="Matthew L" school="Prospect HS" />
           <ProfileBlock image="/profile/Eric.webp" name="Eric W" school="John Hersey HS" />
           <ProfileBlock image="default" name="Zuzanna L" school="John Hersey HS" />
           <ProfileBlock image="/profile/Efe.png" name="Efe O" school="Prospect HS" />

@@ -20,8 +20,8 @@ export default function Home() {
       <Landing />
       <Summary />
       <Sponsors />
-      <Schedule />
-      <Team />
+      {/* <Schedule /> */}
+      {/* <Team /> */}
       <FAQ />
       <Footer />
     </>
