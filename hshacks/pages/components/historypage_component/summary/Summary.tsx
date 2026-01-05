@@ -1,6 +1,6 @@
 import React from 'react' 
 import Pictures from './Pictures' 
-import StatBoxes from './StatBoxes'
+// import StatBoxes from './StatBoxes'
 import Button from '../../global/button/Button' 
 
 const Summary = () => {
