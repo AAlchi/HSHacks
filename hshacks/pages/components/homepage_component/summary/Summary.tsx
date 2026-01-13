@@ -12,7 +12,7 @@ const Summary = () => {
     '/pictures/two.jpg',
     '/pictures/three.jpg',
     '/pictures/four.jpg',
-    '/pictures/five.jpg',
+    '/pictures/imageFive.jpg',
     '/pictures/six.jpg'
   ]
 

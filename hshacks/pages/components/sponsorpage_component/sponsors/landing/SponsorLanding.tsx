@@ -27,8 +27,8 @@ const SponsorLanding = () => {
                         <button 
                             onClick={() => {
                                 const link = document.createElement('a');
-                                link.href = 'HSHacks 2025 Prospectus.pdf';
-                                link.download = 'HSHacks 2025 Prospectus.pdf';
+                                link.href = 'HSHacks 2026 Prospectus.pdf';
+                                link.download = 'HSHacks 2026 Prospectus.pdf';
                                 document.body.appendChild(link);
                                 link.click();
                                 document.body.removeChild(link);

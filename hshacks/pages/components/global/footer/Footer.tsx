@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import Map from './Map'
 import ContactBlock from './ContactBlock'
 import Button from '../button/Button'
@@ -21,7 +20,7 @@ const Footer = () => {
                     </div>
                     <ContactBlock name="HSHacks Team" email='team@hshacks.org' label='Team email' />
                     <ContactBlock name="Ali AI" email='aalchikhibrahim6522@stu.d214.org' label='Director' />
-                    {/* <ContactBlock name="Angel B" email='abitsov7028@stu.d214.org' label='Director' /> */}
+                    <ContactBlock name="Angel B" email='abitsov7028@stu.d214.org' label='Director' />
                 </div>
             </div>
             <div className='text-white pt-5'>
