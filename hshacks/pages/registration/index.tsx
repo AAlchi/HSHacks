@@ -10,7 +10,7 @@ const index = () => {
   return (
     <div className='background'>
       <Head>
-        <title>HSHacks - Registeration</title>
+        <title>HSHacks - Registration</title>
         <link rel="icon" href="/HSHacks_Icon.png" />
       </Head>
       <Header />   

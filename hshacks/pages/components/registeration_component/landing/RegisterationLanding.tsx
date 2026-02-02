@@ -17,7 +17,7 @@ const RegisterationLanding = () => {
                 <div className='text-center flex flex-col gap-10 items-center justify-center pt-10 px-4 md:px-8 lg:px-16' style={{ minHeight: "600px", flex: "2" }}>
                     <div className='flex flex-col gap-3'>
                         <h1 className='text-5xl font-extrabold one'>
-                            <span className="HSBlue">HSHacks <span className='text-white'>Registeration</span></span>
+                            <span className="HSBlue">HSHacks <span className='text-white'>Registration</span></span>
                         </h1>
                         <br></br>
                         <div className='flex justify-center'>

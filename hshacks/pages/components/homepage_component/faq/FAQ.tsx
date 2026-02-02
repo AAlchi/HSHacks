@@ -10,7 +10,7 @@ const FAQ = () => {
             <div className='w-full border-b-2 border-white' style={{ height: "2px" }} />
         </div> 
         <div className='flex gap-3 w-full flex-col items-center justify-center pt-10'>
-            <FAQBlock question="What do I do if registeration is over?" answer="If you miss the registeration process, then you can contact our team at team@hshacks.org."/>
+            <FAQBlock question="What do I do if registration is over?" answer="If you miss the registration process, then you can contact our team at team@hshacks.org."/>
             <FAQBlock question="What do I need to bring to HSHacks?" answer="All you need to bring is a computer and your ID; we'll provide everything else."/>
             <FAQBlock question="Is there an age limit for HSHacks?" answer="HSHacks is only open to high schoolers so unfortunately, if you are not in grades 9-12, we can't offer you a place as a participant. Contact team@hshacks.org for any questions."/>
             <FAQBlock question="How do I check-in at HSHacks?" answer="To check-in, simply give us your name and show us an ID when you enter."/>
