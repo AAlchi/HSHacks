@@ -32,12 +32,12 @@ export const sponsorsConst = [
         image: "/pictures/sticker_ninja.png",
         website: "https://stickerninja.com/"
     },
-    {
-        color: "gold", 
-        description: "Looking to prepare for an interview? InterviewBuddy is an amazing company that specializes in getting you ready for your next interview. You get access to mock sessions, feedback, and also coaching personalized to you! Thank you for supporting HSHacks!",
-        image: "/pictures/interviewbuddy_logo.png",
-        website: "https://interviewbuddy.net/"
-    }, 
+    // {
+    //     color: "gold", 
+    //     description: "Looking to prepare for an interview? InterviewBuddy is an amazing company that specializes in getting you ready for your next interview. You get access to mock sessions, feedback, and also coaching personalized to you! Thank you for supporting HSHacks!",
+    //     image: "/pictures/interviewbuddy_logo.png",
+    //     website: "https://interviewbuddy.net/"
+    // }, 
     {
         color: "silver", 
         description: "Tugo Tea House gives you the perfect taste of Taiwan. Located in Arlington Heights, IL, Tugo Tea House offers a variety of delicious teas and boba. Thank you for supporting HSHacks!",
