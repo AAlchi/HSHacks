@@ -1,49 +1,49 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../../global/button/Button' 
 import { motion } from "framer-motion";
 
 const Landing = () => {
-    // const [timeRemaining, setTimeRemaining] = useState<{
-    //     days: number;
-    //     hours: number;
-    //     minutes: number;
-    //     seconds: number;
-    //   }>({
-    //     days: 0,
-    //     hours: 0,
-    //     minutes: 0,
-    //     seconds: 0
-    //   });
+    const [timeRemaining, setTimeRemaining] = useState<{
+        days: number;
+        hours: number;
+        minutes: number;
+        seconds: number;
+      }>({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0
+      });
   
-    //   useEffect(() => {
-    //     const calculateTimeRemaining = () => {
-    //       const now = new Date();
-    //       const hackathonDate = new Date();
+      useEffect(() => {
+        const calculateTimeRemaining = () => {
+          const now = new Date();
+          const hackathonDate = new Date("4/18/2026 08:00:00"); // Set to April 18, 2026 at 8:00 AM
 
-    //       const daysAhead = (6 - now.getDay() + 7) % 7;
-    //       hackathonDate.setDate(now.getDate() + daysAhead);
-    //       hackathonDate.setHours(8, 0, 0, 0);
+        //   const daysAhead = (6 - now.getDay() + 7) % 7;
+        //   hackathonDate.setDate(now.getDate() + daysAhead);
+          hackathonDate.setHours(8, 0, 0, 0);
     
-    //       const diff: number = hackathonDate.getTime() - now.getTime();
+          const diff: number = hackathonDate.getTime() - now.getTime();
     
-    //       if (diff > 0) {
-    //         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    //         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    //         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    //         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+          if (diff > 0) {
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
     
-    //         setTimeRemaining({ days, hours, minutes, seconds });
-    //       } else {
-    //         setTimeRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-    //       }
-    //     };
+            setTimeRemaining({ days, hours, minutes, seconds });
+          } else {
+            setTimeRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+          }
+        };
 
-    //     const interval = setInterval(calculateTimeRemaining, 1000);
+        const interval = setInterval(calculateTimeRemaining, 1000);
     
-    //     calculateTimeRemaining();
-    //     return () => clearInterval(interval);
-    //   }, []);
+        calculateTimeRemaining();
+        return () => clearInterval(interval);
+      }, []);
 
     return (
         <div className='background text-white'>
@@ -78,7 +78,7 @@ const Landing = () => {
                             </p>
                         </motion.div>
                     </div>
-                    {/* <div className='bg-white rounded-lg py-3 px-5 text-black'>
+                    <div className='bg-white rounded-lg py-3 px-5 text-black'>
                         <div className='flex w-full justify-evenly gap-3 items-center'>
                             <div className='flex flex-col'>
                                 <p className='text-2xl font-bold'>{timeRemaining.days}</p>
@@ -100,9 +100,9 @@ const Landing = () => {
                                 <p className='text-sm'>Seconds</p>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                     <div className='flex gap-3 lg:flex-row flex-col justify-center'>
-                        <Button name="Registration Open!" navigate="https://forms.gle/h2RWY6wS49BdwWmXA" color="bg-white text-black" icon="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 8.25.22-.22a.75.75 0 0 1 1.28.53v6.441c0 .472.214.934.64 1.137a3.75 3.75 0 0 0 4.994-1.77c.205-.428-.152-.868-.627-.868h-.507m-6-2.25h7.5M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                        <Button name="Registration (Closing Soon)!" navigate="https://forms.gle/h2RWY6wS49BdwWmXA" color="bg-white text-black" icon="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 8.25.22-.22a.75.75 0 0 1 1.28.53v6.441c0 .472.214.934.64 1.137a3.75 3.75 0 0 0 4.994-1.77c.205-.428-.152-.868-.627-.868h-.507m-6-2.25h7.5M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                         <Button name="Join the Discord" navigate="https://discord.gg/SKKQhWdWWz" color="bg-blue-800 text-white" icon="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </div>
                 </div>
