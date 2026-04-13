@@ -9,6 +9,12 @@ export const sponsorsConst = [
         website: "https://normandyremodeling.com/"
     },
     {
+        color: "platinum",
+        description: "The D214 Education Foundation supports the students and their families with life and school. Thank you for supporting HSHacks!",
+        image: "/pictures/d214_education_foundation.png",
+        website: "https://www.d214.org/o/214ef"
+    },
+    {
         color: "gold", 
         description: "Looking for a cool domain for your website? XYZ offers great top level domains for any project you're coding. Thank you XYZ for your sponsorship!",
         image: "/pictures/xyz-logo-color.png",

@@ -27,14 +27,14 @@ const ScheduleData = [
     time: "9:00 AM",
     items: [{
       _id: 1,
-      name: "Intro to HTML, CSS, JS Workshop"
+      name: "Game Development Workshop"
     }]
   },
   {
     time: "10:00 AM",
     items: [{
       _id: 1,
-      name: "Authentication with Spring Boot Workshop"
+      name: "Coding Workshop -- Any Skill Level"
     }]
   },
   {
@@ -48,7 +48,7 @@ const ScheduleData = [
     time: "1:00 PM",
     items: [{
       _id: 1,
-      name: "AI Coding Tutor Workshop"
+      name: "Keenan's Workshop"
     }]
   },
   {
