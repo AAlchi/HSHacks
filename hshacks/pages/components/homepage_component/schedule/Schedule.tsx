@@ -13,7 +13,7 @@ const ScheduleData = [
     time: "8:30 AM",
     items: [{
       _id: 1,
-      name: "Opening Ceremony + Sponsor & Nonprofit Intros"
+      name: "Opening Ceremony"
     }]
   },
   {
@@ -27,7 +27,7 @@ const ScheduleData = [
     time: "9:00 AM",
     items: [{
       _id: 1,
-      name: "Game Development Workshop"
+      name: "Intro to Coding Workshop"
     }]
   },
   {
@@ -38,6 +38,13 @@ const ScheduleData = [
     }]
   },
   {
+    time: "11:00 AM",
+    items: [{
+      _id: 1,
+      name: "AMA with Computer Science Students from UIUC/Cornell"
+    }]
+  },
+  {
     time: "12:00 PM",
     items: [{
       _id: 1,
@@ -45,24 +52,10 @@ const ScheduleData = [
     }]
   },
   {
-    time: "1:00 PM",
-    items: [{
-      _id: 1,
-      name: "Keenan's Workshop"
-    }]
-  },
-  {
     time: "2:00 PM",
     items: [{
       _id: 1,
-      name: "AMA with Larry Schrof"
-    }]
-  },
-  {
-    time: "4:30 PM",
-    items: [{
-      _id: 1,
-      name: "Project Presentation Workshop"
+      name: "Game Development Workshop"
     }]
   },
   {
