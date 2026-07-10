@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix hshacks run dev",
+    "build": "npm --prefix hshacks run build",
+    "start": "npm --prefix hshacks run start",
+    "lint": "npm --prefix hshacks run lint"
+  }
+}
